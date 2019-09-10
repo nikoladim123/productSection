@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'CormorantSC-Light';
+  src:url('../fonts/CormorantSC-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src:url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src:url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+.ppContent{
+  position: relative;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30.56%;
+}
+
+.border{
+  position: absolute;
+  top: 4.4vw;
+  left: 9.2vw;
+  width: 27.95vw;
+}
+
+
+.sales{
+  position: absolute;
+  /* border: 1px solid red; */
+  color: white;
+  transform: rotate(90deg);
+  left: -2vw;
+  top: 22.5vw;
+  font-family: 'CormorantSC-Light';
+}
+
+.sales h2{
+  margin: 0;
+  font-weight: 100;
+  font-size: 18.0226vw;
+}
+
+.sales p{
+  font-family: 'Lato-Regular';
+  margin: 0;
+  font-size: 1.23vw;
+  margin-top: -4.5vw;
+  margin-left: 1vw;
+}
+
+.offPrice{
+  font-family: 'Lato-Black';
+  position: absolute;
+  top: 54.5vw;
+  left: 18.5vw;
+  color: white;
+  /* font-weight: 800; */
+  font-size: 2.3171vw;
+}
+
+
+.prodContainer{
+  position: absolute;
+  left: 47vw;
+  top: 14.6vw;
+  width: 43.5028vw;
+  height: 46.6vw;
+  background: rgba(255,255,255,0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dust{
+  position: relative;
+  left: 8vw;
+  top: -9vw;
+  width: 50.1029vw;
+  width: 0;
+  opacity: 0;
+  transform: rotate(0deg);
+  animation-name: dust;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dust {
+  0%{
+    opacity: 0;
+    width: 0;
+    transform: rotate(0deg);
+  }
+  90%{
+    opacity: 0.8;
+    width: 50.1029vw;
+    transform: rotate(360deg);
+  }
+  100%{
+    opacity: 0;
+    width: 50.1029vw;
+    transform: rotate(360deg);
+  }
+}
+
+.big{
+  position: absolute;
+  width: 30.381vw;
+  right: -3vw;
+  top: 1vw;
+}
+
+.carPickBox{
+  display: flex;
+  position: absolute;
+  /* border: 1px solid red; */
+  bottom: -2.574vw;
+  left: 2.0597vw;
+}
+
+.smallProdBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  margin-right: 1.1843vw;
+  width: 6.6941vw;
+  height: 6.6941vw;
+  background: #ff8c74;
+  border-radius: 5px;
+  border:0.51493vw solid rgba(255,255,255,0.16);
+  /* box-sizing: border-box; */
+  background-clip: content-box;
+  transform: scale(1);
+}
+
+.smallProdBox:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.smallProdBox:nth-child(3) img{
+  width: 60%;
+}
+
+.smallImg{
+  width: 100%;
+}
