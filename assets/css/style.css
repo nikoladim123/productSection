@@ -206,19 +206,48 @@ body{
 }
 
 
+.leftArrowHolder{
+  width: 5vw;
+  height: 5vw;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.leftArrowHolder p{
+  left: 1vw;
+}
+
+.rightArrowHolder{
+  width: 5vw;
+  height: 5vw;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  margin-right: 0.2vw;
+}
+
+.rightArrowHolder p{
+  left: -1vw;
+}
+
+.rightArrowHolder div{
+  right: -2.5vw;
+}
+
 .leftCarArrowBox,.rightCarArrowBox{
   transition: 0.3s;
-  width: 4vw;
-  height: 4vw;
+  width: 5vw;
+  position: relative;
+  height: 5vw;
   background: rgb(230,230,230);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   /* position: absolute; */
-  top: calc(50% - 1vw);
+  /* top: calc(50% - 1vw); */
   opacity: 0.25;
-  margin-bottom: 1vw;
+  /* margin-bottom: 1vw; */
+  /* left: -2vw; */
 }
 .leftCarArrowBox:hover,.rightCarArrowBox:hover{
   cursor: pointer;
@@ -227,16 +256,19 @@ body{
 .leftCarArrowBox p,.rightCarArrowBox p{
   transform: scale(1,1.6);
   font-size: 2.5vw;
+  position: relative;
+  transform: rotate(180deg);
 }
 .arrows {
     /* border: 1px solid black; */
     position: absolute;
-    top: 42vw;
-    width: 5vw;
-    left: 29vw;
+    top: 41.5vw;
+    width: 12vw;
+    left: 27vw;
+    display: flex;
 }
 .leftCarArrowBox{
-  left: 1vw;
+  left: -2.5vw;
 }
 .rightCarArrowBox{
   right: 1vw;
