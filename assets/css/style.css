@@ -92,16 +92,17 @@ body{
 
 
 .dust{
+  transition: 0.75s;
   position: relative;
   left: 8vw;
   top: -9vw;
   width: 50.1029vw;
-  width: 0;
-  opacity: 0;
-  transform: rotate(0deg);
-  animation-name: dust;
+  /* width: 0; */
+  /* opacity: 0; */
+  transform: rotate(360deg);
+  /* animation-name: dust;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 @keyframes dust {
@@ -122,17 +123,40 @@ body{
   }
 }
 
-.big{
+.bigCarContainer{
+  /* border: 1px solid red; */
+  right: -21.5vw;
+  top: 0vw;
   position: absolute;
+  width: 53vw;
+  padding-left: 12vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.big{
+  flex-shrink: 0;
+  transition: 1s;
+  position: relative;
   width: 30.381vw;
-  right: -3vw;
-  top: 1vw;
+  /* display: flex; */
+}
+.bigCarContainer div{
+  transition: 1s;
+}
+.bigCarContainer div:nth-child(1){
+  margin-right: 17vw;
+  margin-left: -43vw;
+}
+
+.bigCarContainer div:nth-child(2) {
+    margin-right: 9vw;
 }
 
 .carPickBox{
   display: flex;
   position: absolute;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   bottom: -2.574vw;
   left: 2.0597vw;
 }
@@ -164,4 +188,41 @@ body{
 
 .smallImg{
   width: 100%;
+}
+
+
+.leftCarArrowBox,.rightCarArrowBox{
+  transition: 0.3s;
+  width: 4vw;
+  height: 4vw;
+  background: rgb(230,230,230);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  top: calc(50% - 1vw);
+  opacity: 0.25;
+  margin-bottom: 1vw;
+}
+.leftCarArrowBox:hover,.rightCarArrowBox:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.leftCarArrowBox p,.rightCarArrowBox p{
+  transform: scale(1,1.6);
+  font-size: 2.5vw;
+}
+.arrows {
+    border: 1px solid black;
+    position: absolute;
+    top: 42vw;
+    width: 5vw;
+    left: 29vw;
+}
+.leftCarArrowBox{
+  left: 1vw;
+}
+.rightCarArrowBox{
+  right: 1vw;
 }
