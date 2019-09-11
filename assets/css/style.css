@@ -157,11 +157,11 @@ body{
   display: flex;
   position: absolute;
   /* border: 1px solid red; */
-  bottom: -2.574vw;
+  bottom: -3.574vw;
   left: 2.0597vw;
   width: 26vw;
   overflow: hidden;
-  padding: 2px;
+  padding: 1vw;
 }
 
 .carPickBox .smallProdBox:nth-child(1){
