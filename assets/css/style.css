@@ -156,10 +156,11 @@ body{
 .carPickBox{
   display: flex;
   position: absolute;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   bottom: -2.574vw;
   left: 2.0597vw;
   width: 26vw;
+  overflow: hidden;
   padding: 2px;
 }
 
@@ -228,7 +229,7 @@ body{
   font-size: 2.5vw;
 }
 .arrows {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     top: 42vw;
     width: 5vw;
