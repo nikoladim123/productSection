@@ -159,6 +159,16 @@ body{
   border: 1px solid red;
   bottom: -2.574vw;
   left: 2.0597vw;
+  width: 26vw;
+  padding: 2px;
+}
+
+.carPickBox .smallProdBox:nth-child(1){
+  margin-left: -8.7vw;
+}
+
+.carPickBox .smallProdBox:nth-child(2){
+  outline: 1px solid rgba(255,255,255,0.4);
 }
 
 .smallProdBox{
@@ -175,15 +185,19 @@ body{
   /* box-sizing: border-box; */
   background-clip: content-box;
   transform: scale(1);
+  flex-shrink: 0;
 }
-
 .smallProdBox:hover{
   transform: scale(1.2);
   cursor: pointer;
 }
 
+.smallProdBox:nth-child(1){
+  margin-left: ;
+}
+
 .smallProdBox:nth-child(3) img{
-  width: 60%;
+  /* width: 60%; */
 }
 
 .smallImg{
